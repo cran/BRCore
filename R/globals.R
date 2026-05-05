@@ -1,0 +1,30 @@
+utils::globalVariables(
+  c(
+    ".",
+    "sample_id",
+    "comparison",
+    "BC",
+    "otu",
+    "membership",
+    "fill",
+    "rank_num",
+    "proportionBC",
+    "relabun",
+    "pred.upr",
+    "pred.lwr",
+    "grp",
+    "fit_class",
+    "otu_id",
+    "goods_cov",
+    "outlier",
+    "iter",
+    "freq.pred",
+    "otu_occ",
+    "otu_rel",
+    "spatial_weight",
+    "time_freq",
+    "read_num"
+  )
+)
+
+utils::globalVariables(c("%>%", "%T>%"))
