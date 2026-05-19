@@ -7,8 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![](https://www.r-pkg.org/badges/version-last-release/BRCore)](https://www.r-pkg.org/badges/version-last-release/BRCore)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/BRCore)](https://cran.r-project.org/package=BRCore)
+[![](https://www.r-pkg.org/badges/version-last-release/BRCore)](https://cran.r-project.org/package=BRCore)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/BRCore)](https://www.r-pkg.org/pkg/BRCore)
 [![Codecov test
 coverage](https://codecov.io/gh/germs-lab/BRCore/graph/badge.svg)](https://app.codecov.io/gh/germs-lab/BRCore)
 [![R-CMD-check](https://github.com/germs-lab/BRCore/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/germs-lab/BRCore/actions/workflows/R-CMD-check.yaml)
@@ -39,7 +39,7 @@ abundance-occupancy distributions
 
 - `fit_neutral_model()`
 - `plot_neutral_model()`
-- `scnm.fit()`
+- `sncm.fit()`
 
 **Visualization**: Plot rarefaction diagnostics, abundance-occupancy
 curves, and core distributions
@@ -74,9 +74,6 @@ pak::pak("germs-lab/BRCore")
 library(BRCore)
 library(phyloseq)
 
-# Load example data
-data("bcse", package = "BRCore")
-
 # Add rarefaction metrics
 bcse_metrics <- add_rarefaction_metrics(data = bcse)
 
@@ -90,9 +87,10 @@ bcse_rarefied_list <- multi_rarefy(
 
 # Update phyloseq object with rarefied data
 bcse_rare_single <- update_otu_table(
-  physeq_obj = bcse, 
-  rarefied_otus = bcse_rarefied_list, 
-  iteration = 2) # Your preffered iteration can be used here
+  physeq_obj = bcse,
+  rarefied_otus = bcse_rarefied_list,
+  iteration = 2
+) # Your preffered iteration can be used here
 
 # Identify core microbiome
 
@@ -107,12 +105,11 @@ bcse_core <- identify_core(
 
 # With multiple iterations of rarefaction
 bcse_core_multi <- identify_core(
-  physeq_obj = bcse, 
-  rarefied_list = bcse_rarefied_list
+  physeq_obj = bcse,
+  rarefied_list = bcse_rarefied_list,
   priority_var = "Crop",
   increase_value = 0.02,
   depth_level = 1000,
-  num_iter = 10,
   seed = 2134
 )
 
