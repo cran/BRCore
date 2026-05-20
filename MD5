@@ -1,7 +1,7 @@
-45a78f10a68d6949f5a9ed7f1c96860e *DESCRIPTION
+aac7ee36b6492a1938e18c5c8bfe8fff *DESCRIPTION
 5a145c8debc509325fb17c7c4d0135c0 *LICENSE
 7b588299df0c3f60680057542c8ff940 *NAMESPACE
-4b6e9304c3941f2869629bbf7c180549 *NEWS.md
+075873c46de64c488c672597bebb6e04 *NEWS.md
 8154d27e72cb6c191857b827dfc5bee9 *R/add_rarefaction_metrics.R
 75af0b164beafa730024e155f8ec81bd *R/brcore_theme.R
 c9df136fa17ec07f0ac4361fa94eaa97 *R/data.R
@@ -20,7 +20,7 @@ d2e6e8650c1e973deccbe1c06e4b98a4 *R/update_otu_table.R
 465f2e661d04fc13f34096cfedf6e175 *R/utils-internal_warn_sncm.R
 f6490f595c658128a265069e0413158f *R/utils-otu_class_checks.R
 b56ff2b193ecba52f9ec7f3b10cca008 *R/utils-pipe.R
-e2dece2563fdf743681c4f613e305c8c *README.md
+93135fa81f1ecf87ab19607cefe15e75 *README.md
 aaaac576d8beafcc9ec68f5151c2cfa3 *build/vignette.rds
 3da40224883d166d992f0b9ddfbc8131 *data/bcse.rda
 3942c99c148cc2143b5bf0a61acc6c42 *data/bean.rda
@@ -49,7 +49,7 @@ afa70e292b8658fae8ec8daea40a02ab *man/plot_rarefaction_metrics.Rd
 5d90fda54608932053f58b3f54709fa0 *man/switchgrass_core.Rd
 108d9991298e30f356da78f5ba786c36 *man/update_otu_table.Rd
 5b0d13e9952cfedf73c208ea83739553 *tests/testthat.R
-fce0c68b78eedbbb7f222a3269018a74 *tests/testthat/setup.R
+68d980180ba17eddf3cab20a803e6d21 *tests/testthat/setup.R
 4247442787cd8d00ac4cf91d05b485b8 *tests/testthat/test-add_rarefaction_metrics.R
 591cec070982c98a6087ea6db5ab2dae *tests/testthat/test-fit_neutral_model.R
 66fca196b93c7da9bdfcc9c20320a6ec *tests/testthat/test-identify_core.R

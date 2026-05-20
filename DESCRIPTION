@@ -1,8 +1,8 @@
 Package: BRCore
-Title: Unified Framework for Identification and Ecological
+Title: A Unified Framework for Identification and Ecological
         Interpretation of Microbial Data from Bioenergy Research
         Centers
-Version: 2.0.5
+Version: 2.0.7
 Authors@R: c(
     person("Bolívar", "Aponte Rolón",
            email = "bolaponte@pm.me", 
@@ -33,11 +33,12 @@ Description: A unified framework for identification and ecological interpretatio
 Depends: R (>= 4.4)
 biocViews:
 Imports: cli (>= 3.6.5), dplyr (>= 1.1.4), ggplot2 (>= 4.0.1), ggpubr
-        (>= 0.6.2), ggrepel (>= 0.9.6), Hmisc (>= 5.2.4), magrittr,
-        minpack.lm (>= 1.2.4), phyloseq, rlang (>= 1.1.6), scales (>=
-        1.4.0), stats4, tibble (>= 3.3.0), tidyr, vegan (>= 2.7.2)
-Suggests: knitr, rmarkdown, testthat (>= 3.2.3), tidyverse (>= 2.0.0),
-        viridis
+        (>= 0.6.2), ggrepel (>= 0.9.6), Hmisc (>= 5.2.4), magrittr (>=
+        2.0.4), minpack.lm (>= 1.2.4), phyloseq, rlang (>= 1.1.6),
+        scales (>= 1.4.0), stats4, tibble (>= 3.3.0), tidyr (>= 1.3.1),
+        vegan (>= 2.7.2)
+Suggests: knitr (>= 1.50), rmarkdown (>= 2.30), testthat (>= 3.2.3),
+        tidyverse (>= 2.0.0), viridis (>= 0.6.5)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: en-US
@@ -49,7 +50,7 @@ URL: https://github.com/germs-lab/BRCore,
         https://www.germslab.org/BRCore/
 BugReports: https://github.com/germs-lab/BRCore/issues
 NeedsCompilation: no
-Packaged: 2026-05-19 01:54:14 UTC; baponte
+Packaged: 2026-05-19 23:26:14 UTC; baponte
 Author: Bolívar Aponte Rolón [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-2544-4551>),
   Gian Maria Niccolò Benucci [aut] (ORCID:
@@ -62,4 +63,4 @@ Author: Bolívar Aponte Rolón [aut, cre] (ORCID:
   Great Lakes Bioenergy Research Center [cph, fnd]
 Maintainer: Bolívar Aponte Rolón <bolaponte@pm.me>
 Repository: CRAN
-Date/Publication: 2026-05-19 02:40:02 UTC
+Date/Publication: 2026-05-20 06:50:08 UTC
